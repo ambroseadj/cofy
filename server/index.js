@@ -30,7 +30,7 @@ app.post('auth/signup')
 
 const PORT= process.env.PORT || 5000
 
-const DATABASE_URL=process.env.CONNECTION_URL
+const DATABASE_URL="mongodb+srv://ambrose:aj208125@stacky-1.dx65ect.mongodb.net/"
 
 
 
