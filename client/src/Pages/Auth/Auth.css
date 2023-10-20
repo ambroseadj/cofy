@@ -1,7 +1,7 @@
 .auth-section {
     min-height: 100vh;
     margin: 0% auto;
-    background-color: #f1f2f3;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +12,7 @@
     margin-right: 30px;
   }
   
-  .login-logo {
-    padding: 20px 30px;
-  }
+  
   
   .auth-container-2 {
     min-width: 20%;
@@ -63,11 +61,14 @@
     margin: 13px 0px;
   }
   
+  .aay{
+    color: white;
+  }
   .auth-btn {
-    margin-top: 10px;
+    margin-top: 40px;
     padding: 10px 5px;
-    background-color: #009dff;
-    border: solid 1px #009dff;
+    background-color: #e50914;
+    border: solid 1px #e50914;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -82,7 +83,7 @@
   
   .handle-switch-btn {
     background-color: transparent;
-    color: #007ac6;
+    color:white;
     border: none;
     font-size: 13px;
     cursor: pointer;

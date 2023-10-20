@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import "./Auth.css";
-import icon from "../../assests/icon.png";
+
 import AboutAuth from "./AboutAuth";
 import { signup, login } from "../../actions/auth";
 const Auth = () => {
@@ -43,11 +43,11 @@ const Auth = () => {
     <section className="auth-section">
       {isSignup && <AboutAuth />}
       <div className="auth-container-2">
-        <img src={icon} alt="stack overflow" className="login-logo" />
+        
         <form onSubmit ={handleSubmit}>
           {isSignup && (
             <label htmlFor="name">
-              <h4>Display Name</h4>
+              <h4>Name</h4>
               <input
                 type="text"
                 id="name"
@@ -90,14 +90,13 @@ const Auth = () => {
                 
               }}
             />
-            {isSignup && <p> Passwords must contain at least eight <br/> characters,including at least 1 letter and 1 number</p>}
+            
           </label>
           {
             isSignup &&(
               <label class="checkbox-container">
              <input type="checkbox"/>
-             <span class="checkmark"></span>
-              Opt-in to receive occasional product<br/> updates, user research invitations, company <br/>announcements, and digests.
+            
              </label>
             )
           }
@@ -106,7 +105,7 @@ const Auth = () => {
           </button>
         </form>
         <p>
-          {isSignup ? "Already have an account?" : "Don't have an account?"}
+          <div className="aay">{isSignup ? "Already have an account?" : "Don't have an account?"}</div>
           <button
             type="button"
             className="handle-switch-btn"

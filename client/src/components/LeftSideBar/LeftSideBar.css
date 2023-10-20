@@ -7,7 +7,7 @@
     box-sizing:border-box;
     font-size: 13px;
     font-family: sans-serif;
-
+    transition: left 0.3s ease,transparent; 
     
 }
 
@@ -52,10 +52,10 @@
     font-weight:bolder;
     color:black;
     background-color: rgb(225,225,225);
-    border-right: solid 3px #ef8236;
+    border-right: solid 3px white;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
 
 .left-sidebar {
     width: 168px;
