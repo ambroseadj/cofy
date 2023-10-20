@@ -94,7 +94,7 @@
     font-size: 13px;
   }
   
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 1000px) {
 
     .main-bar-header .ask-btn {
       padding: 2px 20px;
