@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 import "./LeftSideBar.css"
 const LeftSideBar = ({isOpen,onClose}) => {
     
-    const [SidebarOpen, setSidebarOpen] = useState(false);
+    const [sidebarOpen, setSidebarOpen] = useState(true);
 
     const handleLinkClick = () => {
         
-        setSidebarOpen(false);
+        setSidebarOpen(!sidebarOpen);
       };
   return (
     <div className={`left-sidebar ${isOpen ? 'open' : ''}`}>
@@ -16,20 +16,23 @@ const LeftSideBar = ({isOpen,onClose}) => {
         <nav className="side-nav">
             
        
-                <NavLink to="/" className="side-nav-links" activeclassname="active" onClick={handleLinkClick}>
-                <p>Home</p>
+                <NavLink to="/Main" className="side-nav-links" activeclassname="active" onClick={handleLinkClick}>
+                <p>Dashboard</p>
                 </NavLink>
             
             <div className="side-nav-div">
                 <div>
-                    
+                <NavLink to="/" className="side-nav-links" activeclassname="active" style={{paddingLeft:"40px"}}  onClick={handleLinkClick}>
+                    <p>Filters</p>
+                    </NavLink>
                 </div>
                 
-                  
+             
             
                 
 
             </div>
+           
         </nav>
       
     </div>
