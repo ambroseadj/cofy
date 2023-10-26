@@ -22,7 +22,7 @@ const LeftSideBar = ({isOpen,onClose}) => {
             
             <div className="side-nav-div">
                 <div>
-                <NavLink to="/" className="side-nav-links" activeclassname="active" style={{paddingLeft:"40px"}}  onClick={handleLinkClick}>
+                <NavLink to="/Auth" className="side-nav-links" activeclassname="active" style={{paddingLeft:"40px"}}  onClick={handleLinkClick}>
                     <p>Filters</p>
                     </NavLink>
                 </div>
