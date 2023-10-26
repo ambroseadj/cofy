@@ -9,8 +9,8 @@ import Mainda from './Pages/Mainda/Mainda'
 const AllRoutes = ({ slideIn, handleSlideIn }) => {
   return (
     <Routes>
-    <Route  path='/' element={<Home />}/>
-    <Route  path='/Auth' element={<Auth/>}/>
+    <Route  path='/Auth' element={<Home />}/>
+    <Route  path='/' element={<Auth/>}/>
     <Route path='/main' element={<Mainda/>}/>
     </Routes>
   )
