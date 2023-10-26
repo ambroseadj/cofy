@@ -40,7 +40,7 @@ import LeftSideBar from "../../components/LeftSideBar/LeftSideBar"
 
     const handleLogout = () => {
       dispatch({ type: "LOGOUT" });
-      navigate("/Auth");
+      navigate("/");
       dispatch(setCurrentUser(null));
     };
 
@@ -62,7 +62,7 @@ import LeftSideBar from "../../components/LeftSideBar/LeftSideBar"
        
       </form>
         {User === null ?
-            <Link to="/Auth" className='nav-item nav-links'>Log in</Link>:
+            <Link to="/" className='nav-item nav-links'>Log in</Link>:
         <>
       
 
